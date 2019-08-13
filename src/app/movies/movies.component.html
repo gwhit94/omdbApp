@@ -1,0 +1,9 @@
+<div class="inputField">
+    <input id="searchField" type="text" placeholder="Search">
+</div>
+<br>
+<div class="outputField" *ngFor="let movie of searchOutput">
+    <div>Title: {{movie.Title}}</div>
+    <div>Year: {{movie.Year}}</div>
+    <img [src]="movie.Poster">
+</div>
